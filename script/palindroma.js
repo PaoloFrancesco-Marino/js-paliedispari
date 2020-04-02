@@ -5,13 +5,15 @@
 
 // 1 Chiedere all’utente di inserire una parola
 
-var parola = prompt('inserisci una parola');
+var parola = prompt('inserisci una parola').toLocaleLowerCase();
+console.log(parola);
 
 
 // 2 Creare una funzione per capire se la parola inserita è palindroma
 
-
 var invertiParola = reverseParola(parola);
+console.log(invertiParola);
+
 
 
 if ( parola == invertiParola) {
